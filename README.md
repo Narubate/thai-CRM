@@ -19,12 +19,12 @@ APP_DEBUG=true
 APP_LOG_LEVEL=debug
 APP_URL=http://localhost
 
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=homestead
-DB_USERNAME=homestead
-DB_PASSWORD=secret
+DB_CONNECTION=mongodb
+DB_HOST=mongo
+DB_PORT=27017
+DB_DATABASE=thaicrm
+DB_USERNAME=
+DB_PASSWORD=
 
 BROADCAST_DRIVER=log
 CACHE_DRIVER=file
@@ -70,3 +70,42 @@ enjoy!!.
 ### 3. Updating your fork from original repo to keep up with their changes:
 
     git pull upstream master
+
+---------------------------------------------------------
+# Work with Laradock
+
+### 1. path structure:
+project folder
+|
+|--thai-CRM
+|
+|--laradock
+
+### 2. clone laradock:
+
+    git clone https://github.com/Laradock/laradock.git
+
+### 3. create .env:
+
+    cd laradock
+    cp env-example .env
+
+### 4. config path thai-CRM project:
+
+    APPLICATION=../thai-CRM
+
+### 5. Run your containers:
+
+    docker-compose up -d nginx mongo php-fpm
+
+---------------------------------------------------------
+
+note add config .env of thai-CRM
+```
+DB_CONNECTION=mongodb
+DB_HOST=mongo
+DB_PORT=27017
+DB_DATABASE=thaicrm
+DB_USERNAME=
+DB_PASSWORD=
+```
