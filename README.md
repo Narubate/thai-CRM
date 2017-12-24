@@ -101,7 +101,8 @@ enjoy!!.
 
 ---------------------------------------------------------
 
-note add config .env of thai-CRM
+# note 
+add config .env of thai-CRM
 ```
 DB_CONNECTION=mongodb
 DB_HOST=mongo
@@ -110,3 +111,4 @@ DB_DATABASE=thaicrm
 DB_USERNAME=
 DB_PASSWORD=
 ```
+---------------------------------------------------------
