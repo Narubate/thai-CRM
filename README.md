@@ -75,11 +75,12 @@ enjoy!!.
 # Work with Laradock
 
 ### 1. path structure:
-project folder
-|
-|--thai-CRM
-|
-|--laradock
+
+    project folder
+    |
+    |--thai-CRM
+    |
+    |--laradock
 
 ### 2. clone laradock:
 
