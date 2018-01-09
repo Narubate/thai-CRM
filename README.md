@@ -111,4 +111,11 @@ DB_DATABASE=thaicrm
 DB_USERNAME=
 DB_PASSWORD=
 ```
+
+# This for run error with can't get something in storage/
+```
+php artisan cache:clear 
+chmod -R 777 storage/
+composer dump-autoload
+```
 ---------------------------------------------------------
